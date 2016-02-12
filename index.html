@@ -1,0 +1,52 @@
+<!doctype html>
+<html ng-app="SesameStreet">
+	<head>
+		<title>Angular And React</title>
+		<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<script src="node_modules/react/react.js"></script>
+		<script type="text/javascript">
+			function draw(){
+				$('#cont').css("marginLeft",window.innerWidth/3 + "px");
+				$('#cont').css("width",window.innerWidth/3 + "px");
+				$('#cont').css("marginRight",window.innerWidth/3 + "px");
+				$('#charNavigation').css("marginRight",window.innerWidth/3 + "px");
+					//$('.item').css('width',window.innerWidth/3 + "px");
+					//$('.item').css('height',window.innerHeight/20 + "px");
+			}
+		</script>
+	</head>
+	<body onload="draw();" onresize="draw();">
+		<div id="cont">
+			<img id="sign" src="img/sesamestreet.jpg" width="100%"/>
+			<div id="selectYourSesame" ng-controller="sesameCharacter">
+				<img id="sesameImg"src="img/{{char[index].img}}"></img>
+				<table rows="4" col="2" width="100%">
+					<tr>
+					<td class="itemname">Name:</td>
+					<td class="item" id="sesameName">{{char[index].name}}</td>
+					</tr>
+					<tr>
+					<td class="itemname">Occupation:</td>
+					<td class="item" id="sesameOcc">{{char[index].occupation}}</td>
+					</tr>
+					<tr>
+						<td class="itemname">Hobbie:</td>
+					<td class="item" id="sesameHobbie">{{char[index].hobbie}}</td>
+					</tr>
+					<tr>
+					<td class="itemname">Catchphrase:</td>
+					<td class="item" id="sesameCatch">{{char[index].catchphrase}}</td>
+					</tr>
+				</table>
+				<div id="charNavigation">
+					<a class="navButton" id="next" ng-click="next();">Next</a>
+					<a class="navButton" id="buy" ng-click="buy();">Buy</a>
+					<a class="navButton" id="prev" ng-click="previous();">Previous</a>
+				</div>
+			</div>
+		</div>
+		<script src="node_modules/angular/angular.min.js"></script>
+		<script src="js/SesameStreet.js"></script>
+	</body>
+</html>

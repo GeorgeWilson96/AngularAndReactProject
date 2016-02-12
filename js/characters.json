@@ -1,0 +1,30 @@
+{
+  "Characters":[{
+    "name": "CookieMonster",
+    "img":"CookieMonster.jpg",
+    "occupation": "Professional Eater",
+    "hobbie": "Eating Cookies",
+    "catchphrase":"Om nom nom"
+  },
+  {
+    "name":"Elmo",
+    "img":"elmo.jpeg",
+    "occupation": "Unemployed",
+    "hobbie":"Learning Things",
+    "catchphrase":"Elmo has a Question"
+  },
+  {
+    "name":"Oscar",
+    "img":"OscarTheGrouch.jpg",
+    "occupation": "Dumpster Diver",
+    "hobbie":"Eating Trash",
+    "catchphrase":"I Love Trash"
+  },
+  {
+    "name":"Bert&Ernie",
+    "img":"OscarTheGrouch.jpg",
+    "occupation": "Dumpster Diver",
+    "hobbie":"Eating Trash",
+    "catchphrase":"Ernie Says"
+  }
+]}

@@ -1,0 +1,64 @@
+body{
+  margin: 0,0,0,0;
+  background-color: white;
+  font-size: 12px;
+}
+div#cont{
+  width:33%;
+  height:100%;
+  padding: 5%;
+}
+div#selectYourSesame{
+  width:100%;
+  height:100%;
+  margin-top: -2%;
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+  border-bottom: 2px black solid;
+}
+#sign{
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+  border-top: 2px black solid;
+  border-radius: 40px 40px 0 0;
+}
+img#sesameImg{
+  max-width: 100%;
+  height: 100%;
+}
+.itemname{
+  display: inline-block;
+  text-align: left;
+  width: 33%;
+  float: left;
+  font-size: 13px;
+}
+.item{
+  display: inline-block;
+  text-align: right;
+  width: 63%;
+  float: right;
+  font-size: 18px;
+    border-left: 2px black solid;
+}
+.navButton{
+  display: inline-block;
+  width:33%;
+  height:10%;
+
+}
+#charNavigation{
+  margin-top: 5%;
+  width:100%;
+}
+#next{
+  float:left;
+  text-align: left;
+}
+#prev{
+  float:right;
+  text-align: right;
+}
+#buy{
+  text-align: center;
+}
